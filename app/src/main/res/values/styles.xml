@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="btns_home">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">18dp</item>
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="android:fontFamily">@font/smithsonian</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
 </resources>
