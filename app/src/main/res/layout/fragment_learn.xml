@@ -23,25 +23,25 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:scaleType="centerCrop"
                     android:id="@+id/featured_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_pop_up"
                     android:contentDescription="The Featured Image of the Category"
+                    android:scaleType="centerCrop"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
 
                 <TextView
-                    android:paddingHorizontal="24dp"
                     android:id="@+id/txt_about_category"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="32dp"
                     android:background="#001100"
                     android:fontFamily="@font/smithsonian"
+                    android:paddingHorizontal="24dp"
                     android:paddingTop="48dp"
                     android:text="The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. "
                     android:textColor="#ffffff"
@@ -66,6 +66,21 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/featured_image" />
+
+                <Button
+                    android:padding="8dp"
+                    android:id="@+id/play_quiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="72dp"
+                    android:background="@drawable/bg_btn"
+                    android:fontFamily="@font/smithsonian"
+                    android:text="Play Quiz"
+                    android:textColor="#ffffff"
+                    android:textSize="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
