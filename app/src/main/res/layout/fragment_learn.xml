@@ -1,14 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LearnFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <data>
+
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".LearnFragment">
 
-</FrameLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/featured_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_pop_up"
+                    android:contentDescription="The Featured Image of the Category"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:paddingHorizontal="24dp"
+                    android:id="@+id/txt_about_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="32dp"
+                    android:background="#001100"
+                    android:fontFamily="@font/smithsonian"
+                    android:paddingTop="48dp"
+                    android:text="The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. The Description of the category. Some Knowledgeable Info. "
+                    android:textColor="#ffffff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/featured_image" />
+
+
+                <TextView
+                    android:id="@+id/lbl_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_label"
+                    android:fontFamily="@font/smithsonian"
+                    android:gravity="center"
+                    android:text="Categories"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/featured_image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/featured_image" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>
